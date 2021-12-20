@@ -1,0 +1,218 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "mi calculadora",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "Cancelar"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "SumNumber",
+          "slots": [
+            {
+              "name": "FirstOperator",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "SecondOperator",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "suma {FirstOperator} mas {SecondOperator}",
+            "añade {FirstOperator}",
+            "suma {FirstOperator}",
+            "mas {FirstOperator}",
+            "suma {FirstOperator} con {SecondOperator}",
+            "cuanto es {FirstOperator} mas {SecondOperator}",
+            "suma {FirstOperator} y {SecondOperator}",
+            "{FirstOperator} mas {SecondOperator}"
+          ]
+        },
+        {
+          "name": "ResNumber",
+          "slots": [
+            {
+              "name": "FirstOperator",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "SecondOperator",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "resta {FirstOperator} menos {SecondOperator}",
+            "quita {FirstOperator}",
+            "resta {FirstOperator}",
+            "menos {FirstOperator}",
+            "resta {FirstOperator} con {SecondOperator}",
+            "{FirstOperator} menos {SecondOperator}",
+            "resta {FirstOperator} y {SecondOperator}"
+          ]
+        },
+        {
+          "name": "SqrtNumber",
+          "slots": [
+            {
+              "name": "Number",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "dime la raíz cuadrada ",
+            "raíz cuadrada",
+            "dime la raíz",
+            "raíz",
+            "raíz de {Number}",
+            "raíz cuadrada de {Number}"
+          ]
+        },
+        {
+          "name": "MultNumber",
+          "slots": [
+            {
+              "name": "FirstOperator",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "SecondOperator",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "multiplica {FirstOperator}",
+            "multiplícalo por {FirstOperator}",
+            "multiplica por {FirstOperator}",
+            "por {FirstOperator}",
+            "multiplica {FirstOperator} con {SecondOperator}",
+            "multiplica {FirstOperator} y {SecondOperator}",
+            "{FirstOperator} por {SecondOperator}",
+            "multiplica {FirstOperator} por {SecondOperator}"
+          ]
+        },
+        {
+          "name": "DivNumber",
+          "slots": [
+            {
+              "name": "FirstOperator",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "SecondOperator",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "dividido por {FirstOperator}",
+            "divide por {FirstOperator}",
+            "entre {FirstOperator}",
+            "divide {FirstOperator} con {SecondOperator}",
+            "divide {FirstOperator} y {SecondOperator}",
+            "{FirstOperator} entre {SecondOperator}",
+            "divide {FirstOperator} entre {SecondOperator}"
+          ]
+        },
+        {
+          "name": "PotNumber",
+          "slots": [
+            {
+              "name": "Element",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "Potency",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "{Element} potencia {Potency}",
+            "potencia {Potency}",
+            "elevado a {Potency}",
+            "{Element} elevado a {Potency}"
+          ]
+        },
+        {
+          "name": "AMAZON.MoreIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateSettingsIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollRightIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollLeftIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollUpIntent",
+          "samples": []
+        },
+        {
+          "name": "PercentNumber",
+          "slots": [
+            {
+              "name": "firstOperator",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "secondOperator",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "calcula el {firstOperator} por ciento",
+            "{firstOperator} por ciento",
+            "el {firstOperator} por ciento",
+            "dime el {firstOperator} por ciento",
+            "calcula el {firstOperator} por ciento de {secondOperator}",
+            "{firstOperator} por ciento de {secondOperator}",
+            "el {firstOperator} por ciento de {secondOperator}",
+            "dime el {firstOperator} por ciento de {secondOperator}"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "2"
+}
